@@ -1,0 +1,2 @@
+#!/bin/bash
+kafka-console-consumer --bootstrap-server kafka-1:19092,kafka-2:29092,kafka-3:39092 --topic topic-test-final --group console-group --from-beginning --property print.key=true --key-deserializer=org.apache.kafka.common.serialization.StringDeserializer --isolation-level read_committed
